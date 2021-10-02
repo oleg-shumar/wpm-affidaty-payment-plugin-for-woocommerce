@@ -115,10 +115,24 @@ function wc_affidaty_gateway_init() {
 					'default' => 'yes'
 				),
 
+				'test_mode' => array(
+					'title'   => __( 'Test Mode', 'affidaty-woo' ),
+					'type'    => 'checkbox',
+					'label'   => __( 'Enable Affidaty Test Mode', 'affidaty-woo' ),
+					'default' => 'yes'
+				),
+
 				'application_id' => array(
-					'title'   => __( 'ApplicationID', 'affidaty-woo' ),
+					'title'   => __( 'Application ID', 'affidaty-woo' ),
 					'type'    => 'text',
-					'label'   => __( 'Enable Affidaty Payment', 'affidaty-woo' ),
+					'label'   => __( 'Application ID', 'affidaty-woo' ),
+					'default' => ''
+				),
+
+				'secret_token' => array(
+					'title'   => __( 'Secret Token', 'affidaty-woo' ),
+					'type'    => 'text',
+					'label'   => __( 'Secret Token', 'affidaty-woo' ),
 					'default' => ''
 				),
 
